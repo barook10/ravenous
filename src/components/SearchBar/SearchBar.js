@@ -1,4 +1,8 @@
 import React from "react";
+import styles from './SearchBar.module.css'
+
+
+
 
 const sortByOptions = {
     "Best Match": "best_match",
@@ -17,17 +21,17 @@ function SearchBar() {
       };
     
     return (
-        <div>
-        <div>
+        <div className={styles.SearchBar}>
+        <div className={styles.SearchBarSortOptions}>
         <ul>{renderSortByOptions()}</ul>
         </div>
-        <div>
+        <div className={styles.SearchBarFields}>
             <input type="search-bar" placeholder="search"/>
             <input type="search-bar" placeholder="Where?" />
         </div>
-        <div>
-            <a> Let's Go </a>
-        </div>
+        <div className={styles.SearchBarSubmit}>
+        <button>Let's Go</button>
+      </div>
         </div>
     )
 }
