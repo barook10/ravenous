@@ -17,7 +17,7 @@ function SearchBar( { searchYelp } ) {
       
     const [term, setTerm] = useState('')
     const [location, setLocation] = useState('')
-    const [sortBy, setSortBy] = useState("Best Match")
+    const [sortBy, setSortBy] = useState("best_match")
 
     const getSortByMatch = (sortByOption) => {
       if(sortBy === sortByOption){
@@ -54,8 +54,6 @@ function SearchBar( { searchYelp } ) {
              }}
              >
               {sortByOption}
-            
-
           </li>;
         });
       };
