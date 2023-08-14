@@ -1,9 +1,5 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import styles from './SearchBar.module.css'
-
-
-
 
 const sortByOptions = {
     "Best Match": "best_match",
@@ -11,10 +7,7 @@ const sortByOptions = {
     "Most Reviewed": "review_count",
   };
 
-
-
 function SearchBar( { searchYelp } ) {
-      
     const [term, setTerm] = useState('')
     const [location, setLocation] = useState('')
     const [sortBy, setSortBy] = useState("best_match")
@@ -63,13 +56,13 @@ function SearchBar( { searchYelp } ) {
         <div className={styles.SearchBarSortOptions}>
         <ul>{renderSortByOptions()}</ul>
         </div>
-        <form onClick={handleSearch}>
+        <form onSubmit={handleSearch}>
             <div className={styles.SearchBarFields}>
                 <input type="search-bar" placeholder="search" onChange={handleTermChange} />
                 <input type="search-bar" placeholder="Where?" onChange={handleLocationChange} />
             </div>
             <div className={styles.SearchBarSubmit}>
-            <button>Let's Go</button>
+            <button type="submit">Let's Go</button>
           </div>
         </form>
         </div>
