@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <div className={styles.App}>
-      <h1>TasteNavigatorHub</h1>
+      <h1>Taste Navigator Hub</h1>
       <SearchBar searchYelp={searchYelp} />
       <BusinessList businesses={businesses} />
     </div>

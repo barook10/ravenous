@@ -98,3 +98,23 @@
     }
   }
   
+  @media only screen and (max-width: 560px) {
+    .SearchBar {
+      background-image: url("./background_search_mobile.jpg");
+    }
+  
+    .SearchBarSortOptions ul {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+  
+    .SearchBarFields {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .SearchBarFields input {
+      margin-right: 0;
+      margin-bottom: 0.86rem;
+    }
+  }
