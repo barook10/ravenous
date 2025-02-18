@@ -1,4 +1,4 @@
-const apiKey = "eGfjf71k8n1HBvCWwA2BtFHiJckh0KI4JCpEto8KV-5ShKclTtlOQyrRmTcDsrWA-NVpdCE2Vvdjwlf9k0VhVsTGNUa3_UVCP4KcTdoWApSwsDZJu1aE43Q8MaDZZHYx"
+const apiKey = process.env.REACT_APP_API_KEY
 
 
 const Yelp = {
